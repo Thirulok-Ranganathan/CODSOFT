@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #d5c0c0;
+}
+header {
+    background-color: #9cd0d0;
+    color: #000000;
+    text-align: center;
+    padding: 20px;
+}
+.main_container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+h1 {
+    font-size: 36px;
+}
+h2{
+    color: #ff6600;
+}
+p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.sample_button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff6600;
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 5px;
+    margin-top: 30px;
+}
+.photo-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+.photo-card {
+    flex: 1;
+    max-width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+.photo-card img {
+    max-width: 100%;
+    height: auto;
+}
