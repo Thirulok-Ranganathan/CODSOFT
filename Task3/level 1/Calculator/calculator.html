@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body style="margin-top:17vh;">
+  <div id="calculator">
+    <input type="text" id="Calc" readonly>
+    <input type="button" value="1" onclick="appendToCalc('1')">
+    <input type="button" value="2" onclick="appendToCalc('2')">
+    <input type="button" value="3" onclick="appendToCalc('3')">
+    <input type="button" value="+" onclick="appendToCalc('+')">
+    <input type="button" value="4" onclick="appendToCalc('4')">
+    <input type="button" value="5" onclick="appendToCalc('5')">
+    <input type="button" value="6" onclick="appendToCalc('6')">
+    <input type="button" value="-" onclick="appendToCalc('-')">
+    <input type="button" value="7" onclick="appendToCalc('7')">
+    <input type="button" value="8" onclick="appendToCalc('8')">
+    <input type="button" value="9" onclick="appendToCalc('9')">
+    <input type="button" value="*" onclick="appendToCalc('*')">
+    <input type="button" value="0" onclick="appendToCalc('0')">
+    <input type="button" value="C" onclick="clearCalc()">
+    <input type="button" value="/" onclick="appendToCalc('/')">
+    <input type="button" value="=" onclick="calculate()">
+  </div>
+
+  <script>
+    function appendToCalc(value) {
+      document.getElementById('Calc').value += value;
+    }
+
+    function clearCalc() {
+      document.getElementById('Calc').value = '';
+    }
+
+    function calculate() {
+      try {
+        document.getElementById('Calc').value = eval(document.getElementById('Calc').value);
+      } catch (error) {
+        document.getElementById('Calc').value = 'Error';
+      }
+    }
+  </script>
+</body>
+</html>

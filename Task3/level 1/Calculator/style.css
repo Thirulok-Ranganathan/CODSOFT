@@ -1,0 +1,28 @@
+body{
+    background-color:rgb(53, 48, 48);
+  }
+  #calculator {
+    align-items: center;
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #92e6ff;
+    border-radius: 8px;
+    background-color: #fa7878;
+  }
+
+  input[type="text"] {
+    width: 94.2%;
+    margin-bottom: 15px;
+    padding: 5px;
+    font-size: 18px;
+  }
+
+  input[type="button"] {
+    width: 23%;
+    padding: 10px;
+    font-size: 18px;
+    margin-right: 1%;
+    margin-bottom: 10px;
+    background-color: bisque;
+  }
